@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def index(req):
-    name = req.GET['name'] or 'World'
+    name = req.GET['name'] or "World"
     return render(req, 'index.html', {'name': name})
 
 
